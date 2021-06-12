@@ -1,0 +1,54 @@
+service chung: 
+
+export class CommonService {
+
+  constructor() { }
+
+  /* Tranfer */
+
+  public messageSource = new BehaviorSubject(null);
+
+  public sendMessage(message) {
+    this.messageSource.next(message);
+  }
+}
+
+
+Gia A là gửi 
+	B là nhận
+
+A: 
+export class AComponent implements OnInit {
+
+  constructor(
+    private commonService: CommonService 
+  ) {}
+
+ public sendMessage(message: any){
+	this.commonService.sendMessage(message);
+	}
+}
+
+B: 
+
+export class BComponent implements OnInit, OnDestroy {
+
+  public observerMessageSubcription: Subscription;
+
+  constructor(
+    private commonService: CommonService 
+  ) {}
+
+ ngOnInit(): void {
+    
+  }
+ ngOnDestroy(): void {
+	this.observerMessageSubcription?.unsubscribe();
+}
+
+public onMessageListener() {
+        this.observerMessageSubcription = this.commonService.messageSource.asObservable().subscribe((data: any) => {
+           // do something
+        });
+    }
+}

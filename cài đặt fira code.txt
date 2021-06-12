@@ -1,0 +1,34 @@
+Than Hoang, [25.04.20 09:10]
+cách cài fira code
+
+Than Hoang, [25.04.20 09:10]
+"editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+
+Than Hoang, [25.04.20 09:11]
+sau đó reset lại
+
+Than Hoang, [25.04.20 09:11]
+trong file setting json
+
+Than Hoang, [25.04.20 09:11]
+của VSCODE
+
+link:Than Hoang, [25.04.20 09:10]
+cách cài fira code
+
+Than Hoang, [25.04.20 09:10]
+"editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+
+Than Hoang, [25.04.20 09:11]
+sau đó reset lại
+
+Than Hoang, [25.04.20 09:11]
+trong file setting json
+
+Than Hoang, [25.04.20 09:11]
+của VSCODE
+
+Than Hoang, [25.04.20 09:25]
+https://www.youtube.com/watch?v=8kZv8SkVzEU
